@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+/* css for all images in webpage */
+
+img{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+}
+
+/* css for divs appended to body */
+
+.mainparent{
+    padding: 65px 80px 60px 90px;
+    margin-top: 50px;
+    height: auto;
+    box-shadow: 4px 4px 10px rgb(123 119 119);
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 50px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container,.container3{
+    text-align: center;
+}
+
+/* css for country card and its respective divs */
+
+ .div3,.div4 , .div5{
+   width: 250px;
+   height: auto;
+   overflow: hidden;
+   box-shadow: 4px 4px  4px rgb(194, 190, 190);
+   border-radius: 1rem;
+}
+
+.div4{
+    margin-right: 120px;
+}
+
+/* css for form */
+
+.form{
+    width: 600px;
+   text-align: center;
+}
+
+#text{
+    width: 300px;
+    margin-right: 25px;
+    height: 38px;
+    border-radius: 2rem;
+    padding-left: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(239, 239, 239);
+}
+
+/* css for search button */
+
+.submit{
+    width: 100px;
+    height: 2.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    transition: all 0.3s linear;
+   
+}
+
+.submit:hover{
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+/* css for country name and probality values */
+
+.prob1,.prob2,.prob3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.nameTitle,.finalmsg{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.countryname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* css for the final message i.e nationality msg */
+
+.finalmsg{
+    margin-bottom: 0;
+    padding-top: 15px;
+    color:rgb(22, 201, 22) ;
+}
+
+.finalmsg2{
+    margin-bottom: 0;
+    color: red;
+}
+
+/* css for msg u see on refreshing screen */
+
+.defaultmsg{
+    font-size: 2rem;
+    margin: 35px auto 20px auto;
+    color: rgb(230, 230, 230);
+}
+
+
+/* media queries for various breakdown points */
+/* gave total 5 breakpoint i.e for medium size screen , smaller size screen , and various mobile size screen */
+
+@media (max-width:820px){
+   .mainparent{
+       width: 500px;
+   }
+
+   .form{
+       width: 500px;
+   }
+}
+
+@media(max-width:690px){
+    .container2{
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div4{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .mainparent{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .form{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #text{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media(max-width:500px){
+    .mainparent{
+        width: 250px;
+    }
+    .form,#text{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+    .container2{
+        width: 200px;
+    }
+
+    .div4,.div5{
+        width: 200px;
+    }
+}
+
+@media(max-width:350px){
+    .mainparent{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #text{
+        width: 150px;
+    }
+    .submit{
+        width: 52px;
+        border-radius: 0;
+        font-size: 11px;
+    }
+
+    .div3{
+        width: 200px;
+    }
+}
+
+@media(max-width:270px){
+    .mainparent{
+        width: 180px;
+        padding-top: 50px;
+    }
+
+    .form{
+        width: 180px;
+    }
+
+    .container2,.div4,.div5{
+        width: 180px;
+    }
+
+    .finalmsg,.finalmsg2{
+        font-size: 1.5rem;
+    }
+    
+    .div3{
+        width: 150px;
+    }
+}
+
+@media(max-width:200px){
+    body{
+        justify-content: none;
+    }
+}
+
+/* THE END */
